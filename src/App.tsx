@@ -1,25 +1,27 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
+import Login from './pages/Login';
+import Dashboard from './pages/Dashboard';
+import StayRequest from './pages/StayRequest';
+import Sidebar from './components/Sidebar';
+import UserHeader from './components/UserHeader';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div style={{ display: 'flex' }}>
+        <Sidebar />
+        <div style={{ marginLeft: '200px', padding: '2rem', width: '100%' }}>
+        <UserHeader />
+          <Routes>
+            <Route path="/" element={<Login />} />
+            <Route path="/dashboard" element={<Dashboard />} />
+            <Route path="/stay-request" element={<StayRequest />} />
+          </Routes>
+        </div>
+      </div>
+    </Router>
   );
 }
 
