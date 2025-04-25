@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "paths": {
+    "/slarama": {
+      "name": "/slarama",
+      "lambdaFunction": "slarama01",
+      "permissions": {
+        "setting": "private",
+        "auth": [
+          "create"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-slarama-dev-e5aa4-authRole",
+      "UnauthRoleArn": "arn:aws:iam::039612857754:role/amplify-slarama-dev-e5aa4-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::039612857754:role/amplify-slarama-dev-e5aa4-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-slarama-dev-e5aa4-deployment",
+      "UnauthRoleName": "amplify-slarama-dev-e5aa4-unauthRole",
+      "StackName": "amplify-slarama-dev-e5aa4",
+      "StackId": "arn:aws:cloudformation:us-east-1:039612857754:stack/amplify-slarama-dev-e5aa4/272148d0-216d-11f0-9fe9-0e0c47ff80d3",
+      "AmplifyAppId": "dekw2pjlrtvap"
+    },
+    "categories": {
+      "function": {
+        "slarama01": {}
+      },
+      "auth": {
+        "slarama": {}
+      }
+    }
+  }
+}
